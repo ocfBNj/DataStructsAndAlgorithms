@@ -13,7 +13,7 @@ void bubble_sort(int arr[], int length) {
 }
 
 int main() {
-    int arr[] = {56,32,45,12,52,32,61,8,5,4,2,1};
+    int arr[] = {56, 32, 45, 12, 52, 32, 61, 8, 5, 4, 2, 1};
     bubble_sort(arr, sizeof(arr) / sizeof(arr[0]));
 
     for (auto num : arr)

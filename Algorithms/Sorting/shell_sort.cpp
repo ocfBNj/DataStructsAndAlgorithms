@@ -8,7 +8,7 @@ void __insertion_sort(int arr[], int i, int interval) {
         arr[j + interval] = arr[j];
         j -= interval;
     }
-    
+
     arr[j + interval] = key;
 }
 
@@ -21,7 +21,7 @@ void shell_sort(int arr[], int length) {
 }
 
 int main() {
-    int arr[] = {56,32,45,12,52,32,61,8,5,4,2,1};
+    int arr[] = {56, 32, 45, 12, 52, 32, 61, 8, 5, 4, 2, 1};
     shell_sort(arr, sizeof(arr) / sizeof(arr[0]));
 
     for (auto num : arr)

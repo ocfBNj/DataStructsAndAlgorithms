@@ -41,7 +41,7 @@ void heap_sort(int arr[], int length) {
 }
 
 int main() {
-    int arr[] = {10,9,8,7,6,5,4,3,2,1,100};
+    int arr[] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 100};
     heap_sort(arr, sizeof(arr) / sizeof(arr[0]));
 
     for (auto num : arr)

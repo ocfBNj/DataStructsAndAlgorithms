@@ -9,13 +9,13 @@ void insertion_sort(int arr[], int length) {
             arr[j + 1] = arr[j];
             j -= 1;
         }
-        
+
         arr[j + 1] = key;
     }
 }
 
 int main() {
-    int arr[] = {56,32,45,12,52,32,61,8,5,4,2,1};
+    int arr[] = {56, 32, 45, 12, 52, 32, 61, 8, 5, 4, 2, 1};
     insertion_sort(arr, sizeof(arr) / sizeof(arr[0]));
 
     for (auto num : arr)

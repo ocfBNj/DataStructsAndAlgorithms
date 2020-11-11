@@ -27,11 +27,10 @@ void qucik_sort(int arr[], int length) {
         arr += mid + 1;
         length -= mid + 1;
     }
-
 }
 
 int main() {
-    int arr[] = {9,8,7,6,5,34,13,453,12,53};
+    int arr[] = {9, 8, 7, 6, 5, 34, 13, 453, 12, 53};
     qucik_sort(arr, sizeof(arr) / sizeof(arr[0]));
 
     for (auto num : arr)

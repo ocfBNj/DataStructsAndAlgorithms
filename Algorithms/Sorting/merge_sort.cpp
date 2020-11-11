@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstddef>
+#include <iostream>
 
 void __merge(int arr[], int begin, int mid, int end) {
     int n1 = mid - begin;
@@ -23,14 +23,13 @@ void __merge(int arr[], int begin, int mid, int end) {
     for (; k < end; k++) {
         if (A[i] <= B[j])
             arr[k] = A[i++];
-        else 
+        else
             arr[k] = B[j++];
     }
 
     delete[] A;
     delete[] B;
 }
-
 
 void merge_sort(int arr[], int length) {
     if (length > 1) {
@@ -42,7 +41,7 @@ void merge_sort(int arr[], int length) {
 }
 
 int main() {
-    int arr[] = {9,8,7,6,5,34,13,453,12,53};
+    int arr[] = {9, 8, 7, 6, 5, 34, 13, 453, 12, 53};
     merge_sort(arr, sizeof(arr) / sizeof(arr[0]));
 
     for (auto num : arr)
