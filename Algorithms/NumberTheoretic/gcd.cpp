@@ -35,6 +35,12 @@ int bgcd(int a, int b) {
 }
 
 int main() {
-    std::cout << gcd(25, 125) << "\n";
-    std::cout << bgcd(25, 125) << "\n";
+    int a = 0;
+    int b = 0;
+
+    std::cout << "Please enter two numbers: ";
+    std::cin >> a >> b;
+
+    std::cout << "gcd(" << a << ", " << b << ") = " << gcd(a, b) << "\n";
+    std::cout << "bgcd(" << a << ", " << b << ") = " << bgcd(a, b) << "\n";
 }
