@@ -13,5 +13,11 @@ int lcm(int a, int b) {
 }
 
 int main() {
-    std::cout << lcm(15, 30) << "\n";
+    int a = 0;
+    int b = 0;
+
+    std::cout << "Please enter two numbers: ";
+    std::cin >> a >> b;
+
+    std::cout << "lcm(" << a << ", " << b << ") = " << lcm(a, b) << "\n";
 }
